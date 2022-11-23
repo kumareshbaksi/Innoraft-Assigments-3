@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.services{
+    background-color: #c9d3fd;
+    padding: 50px 75px;
+}
+
+
+.container .header{
+    font-size: 30px;
+}
+
+.container .header::after{
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100px;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 3px solid black;
+}
+
+.boxes{
+    /* It take width automatically, why? */
+    height: 80vh;
+    display: flex;
+    /* Contents are not wrapping*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+
+}
+
+.names h2 {
+    color: white;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.names h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.names{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+
+    /* is there any other way to make a div at bottom inside a div?*/
+    position: relative;
+    top: 80%;
+}
+
+.box-design{
+    height: 85%;
+    width: 32%;
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url('./img-02.png');
+    background-repeat: no-repeat;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 5px 10px 8px #888888;
+    background-size: cover;
+
+}
+
+.socials{
+    visibility: hidden;
+}
+
+.socials i{
+    background: white;
+    font-weight: 20px;
+    padding:15px;
+    border-radius: 50%;
+}
+
+.box-design:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url('./img-02.png');
+    
+}
+.box-design:hover .names{
+    position: relative;
+    top: 70%;
+}
+.box-design:hover .socials{
+    visibility: visible;
+}
+
+
+.box1{
+}
+.box2{
+
+
+}
+.box3{
+
+}
+
+
